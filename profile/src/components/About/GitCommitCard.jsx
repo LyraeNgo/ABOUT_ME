@@ -8,7 +8,7 @@ const GitCommitCard = ({ commit }) => {
   const bullets = Array.isArray(commit?.bullets) ? commit.bullets : [];
 
   return (
-    <div className="rounded-2xl border max-w-[50%] border-black/10 bg-white/60 p-5 dark:border-white/10 dark:bg-black/20">
+    <div className="rounded-2xl  max-w-[50%] border-black/10 bg-white/60 p-5 dark:border-white/10 dark:bg-black/20">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
