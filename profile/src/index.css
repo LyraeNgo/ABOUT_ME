@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-white text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+  }
+  
+}
+
+@layer utilities {
+  .bg-grid {
+    --grid-line: rgba(0, 0, 0, 0.06);
+    background-image:
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .dark .bg-grid {
+    --grid-line: rgba(255, 255, 255, 0.08);
+  }
+}
