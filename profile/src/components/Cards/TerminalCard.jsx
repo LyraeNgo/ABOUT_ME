@@ -13,8 +13,7 @@ const defaultResponse = {
      github:"https://github.com/LyraeNgo",
      email:"ngominhtam26112005@gmail.com",
      phone:"0708963561",
-     linkedin:"",
-     website:""
+     linkedin:"linkedin.com/in/minh-tam-ngo-631911301/"
   }
   
 };
