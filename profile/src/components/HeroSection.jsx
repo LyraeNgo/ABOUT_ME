@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="lg:col-span-2">
             <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-3 py-1 text-xs text-zinc-700 dark:border-white/10 dark:bg-white/5 dark:text-zinc-300">
               <span className="font-mono text-cyan-600 dark:text-cyan-300">v1</span>
-              <span>Backend Developer Portfolio</span>
+              <span>Portfolio</span>
             </div>
           </div>
 
