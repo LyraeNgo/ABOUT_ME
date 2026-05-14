@@ -31,15 +31,16 @@ const About = () => {
       date: "8/2025",
       title: "Achievement: Junior now, time for raising",
       body: "Studied hard",
-      tags: ["study"],
+      bullets: ["Highlighted: Learned and programmed UI for a small vegetable shop"],   
+      tags: ["projects"],
     },
     {
       id: "84bbc11",
       date: "5/2025",
-      title: "Achievement: Completed my second year with GPA 8.67!",
-      body: "A first UI project in my life",
-      tags: ["projects"],
-      bullets: ["Highlighted: Learned and programmed UI for a small vegetable shop"],    
+      title: "Achievement: Completed second year!",
+      body: "complete with GPA 8.67",
+      tags: ["study"],
+       
     },
     {
       id: "f44bca3",

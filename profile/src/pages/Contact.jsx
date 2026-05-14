@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import ApiCard from "../components/Cards/ApiCard";
-const API_BASE_URL = (import.meta?.env?.VITE_API_BASE_URL ?? "").replace(/\/$/, "");
+const API_BASE_URL = "http://localhost:3001"
+console.log("🚀 ~ API_BASE_URL:", API_BASE_URL)
 const MESSAGE_ENDPOINT = "/v1/messages";
 
 const buildPayload = ({ email, content }) => ({
@@ -157,9 +158,19 @@ const Contact = () => {
         <div className="rounded-2xl border border-black/10 bg-white/70 p-6 dark:border-white/10 dark:bg-white/5">
           <div className="text-sm font-semibold">Request (Postman-like)</div>
 
-              <ApiCard method={'POST'} path={"/api/v1/sendMe"}></ApiCard>
           <div className="mt-4 overflow-hidden rounded-xl border border-black/10 bg-white/60 dark:border-white/10 dark:bg-black/30">
-            
+            <div className="flex items-center justify-between gap-3 border-b border-black/10 px-4 py-3 dark:border-white/10">
+              <div className="flex items-center gap-2">
+                <span className="rounded-lg bg-emerald-600 px-2 py-0.5 font-mono text-[11px] font-semibold text-white dark:bg-emerald-500 dark:text-black">
+                  POST
+                </span>
+                <span className="font-mono text-xs text-zinc-800 dark:text-zinc-200">
+                  {API_BASE_URL || ""}
+                  {MESSAGE_ENDPOINT}
+                </span>
+              </div>
+              <span className="font-mono text-[11px] text-zinc-500">JSON</span>
+            </div>
 
             <div className="px-4 py-3">
               <div className="text-[11px] font-semibold text-zinc-700 dark:text-zinc-300">
@@ -232,14 +243,6 @@ const Contact = () => {
                 Sent (HTTP {result.status})
               </div>
             ) : null}
-
-            <div className="text-xs text-zinc-500">
-              Posting to{" "}
-              <span className="font-mono">
-                {API_BASE_URL || "(same-origin)"}
-                {MESSAGE_ENDPOINT}
-              </span>
-            </div>
           </form>
         </div>
 
