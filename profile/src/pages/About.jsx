@@ -9,9 +9,9 @@ const About = () => {
     {
       id: "6215ad2",
       date: "1/2026",
-      title: "Complete a project",
+      title: "Completed a first full project",
       body: "Chat and call website with scalable system",
-      tags: ["project"],
+      tags: ["projects"],
       bullets: ["Highlighted: a completed project"],
       links:[{
         label:"Project",

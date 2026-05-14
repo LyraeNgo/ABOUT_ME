@@ -26,9 +26,9 @@ const Navbar = () => {
             About
           </NavLink>
 
-          <NavLink to="/projects" className={navClass}>
+          {/* <NavLink to="/projects" className={navClass}>
             Projects
-          </NavLink>
+          </NavLink> */}
 
           <NavLink to="/contact" className={navClass}>
             Contact
