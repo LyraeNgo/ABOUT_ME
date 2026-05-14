@@ -1,8 +1,11 @@
 import { useMemo, useState } from "react";
 import ApiCard from "../components/Cards/ApiCard";
+import { Mail } from "lucide-react";
+import { FaGithub,FaLinkedin } from "react-icons/fa";
 const API_BASE_URL = "http://localhost:3001"
 console.log("🚀 ~ API_BASE_URL:", API_BASE_URL)
 const MESSAGE_ENDPOINT = "/v1/messages";
+
 
 const buildPayload = ({ email, content }) => ({
   email: email.trim(),
@@ -153,9 +156,9 @@ const Contact = () => {
       <p className="mt-3 max-w-2xl text-zinc-700 dark:text-zinc-300">
         You can text me email in this form
       </p>
-
       <div className="mt-8 grid gap-6 lg:grid-cols-2">
-        <div className="rounded-2xl border border-black/10 bg-white/70 p-6 dark:border-white/10 dark:bg-white/5">
+      {/* left */}  
+        {/* <div className="rounded-2xl border border-black/10 bg-white/70 p-6 dark:border-white/10 dark:bg-white/5">
           <div className="text-sm font-semibold">Request (Postman-like)</div>
 
           <div className="mt-4 overflow-hidden rounded-xl border border-black/10 bg-white/60 dark:border-white/10 dark:bg-black/30">
@@ -244,13 +247,13 @@ const Contact = () => {
               </div>
             ) : null}
           </form>
-        </div>
+        </div> */}
 
         <div className="rounded-2xl border border-black/10 bg-white/70 p-6 dark:border-white/10 dark:bg-white/5">
           <div className="text-sm font-semibold">Links</div>
           <div className="mt-4 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
             <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 bg-white/60 px-4 py-3 dark:border-white/10 dark:bg-black/20">
-              <span className="font-mono">email</span>
+              <span className="font-mono"> <Mail size={20}></Mail> email</span>
               <div className="flex items-center gap-2">
                 <span className="text-zinc-500 dark:text-zinc-400">
                   ngominhtam26112005@gmail.com
@@ -266,7 +269,9 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 bg-white/60 px-4 py-3 dark:border-white/10 dark:bg-black/20">
-              <span className="font-mono">github</span>
+              <span className="font-mono">
+                  <FaGithub size={20}></FaGithub>
+                github</span>
               <div className="flex items-center gap-2">
                 <span className="text-zinc-500 dark:text-zinc-400">
                   github.com/LyraeNgo
@@ -282,7 +287,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center justify-between gap-3 rounded-xl border border-black/10 bg-white/60 px-4 py-3 dark:border-white/10 dark:bg-black/20">
-              <span className="font-mono">linkedin</span>
+              <span className="font-mono"> <FaLinkedin size={20}></FaLinkedin> linkedin</span>
               <div className="flex items-center gap-2">
                 <span className="text-zinc-500 dark:text-zinc-400">
                   linkedin.com/in/minh-tam-ngo-631911301/

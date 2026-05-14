@@ -23,7 +23,7 @@ const HeroSection = () => {
           {/* avatar */}
           <div className="h-[85%] overflow-hidden rounded-2xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5">
             <img
-              src="https://res.cloudinary.com/dqdmgz59k/image/upload/v1776694441/1_vlsvi0.jpg"
+              src="https://res.cloudinary.com/dqdmgz59k/image/upload/v1778738713/avatar_edfqwn.jpg"
               alt="Avatar"
               className="h-full w-full object-cover"
             />
