@@ -1,6 +1,6 @@
 
 # HELLO WORLD 🙋‍♂️
-🧑‍🎓I'm Ngo Minh Tam, a third-year student at Ton Duc Thang Univiersity. </br>
+🧑‍🎓I'm Ngo Minh Tam, a fourth-year student at Ton Duc Thang Univiersity. </br>
 💻I'm a Fullstack dev </br>
 📞Contact me:
 -  ✉️ ngominhtam26112005@gmail.com 
